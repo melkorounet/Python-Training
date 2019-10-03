@@ -17,26 +17,26 @@ Training based on the book _Illustrate Guide to Python 3_ :
 - [x] Chapter 12 : Comments, Booleans and None
 - [x] Chapter 13 : Conditionals and Whitespace
 - [x] Chapter 14 : Containers : Lists, Tuples, and Sets
-- [] Chapter 15 : Iteration
-- [] Chapter 16 : Dictionaries
-- [] Chapter 17 : Functions
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
+- [ ] Chapter 15 : Iteration
+- [ ] Chapter 16 : Dictionaries
+- [ ] Chapter 17 : Functions
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
