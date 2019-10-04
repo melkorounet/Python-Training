@@ -9,3 +9,5 @@ for name in potos :
 moy_lenght = total_lenght / nb_potos
 
 print(moy_lenght)
+
+print("alexandre" in potos)
