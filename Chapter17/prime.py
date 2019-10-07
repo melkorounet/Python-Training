@@ -1,15 +1,13 @@
 def is_prime(n) :
-    i = 2
-    result = False
+    i=2
+    prime = True
     while i < n :
         result = n % i
-        print(result)
-        i =+ 1
+        i += 1
         if result == 0 :
-            break 
-        else :
-            return True
+            prime=False
+            break
+        
+    print (prime)
 
-print(is_prime(9))
-
-print(is_prime(17))
+is_prime(8)

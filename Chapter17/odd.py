@@ -1,10 +1,12 @@
-def is_odd():
-    num = input("Entrez un nombre :")
+def is_odd(num):
+    '''
+    defini si le nombre est pair
+    '''
     num=int(num)
-    result = num %2
-    if result != 0 :
-        print (num, 'is odd')
-    else :
-        print (num, 'is pair')
+    result = num%2
+    if result != 0 : 
+        return True
+    else : 
+        return False
 
-is_odd()
+is_odd(3)
