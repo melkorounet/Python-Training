@@ -17,11 +17,11 @@ Training based on the book _Illustrate Guide to Python 3_ :
 - [x] Chapter 12 : Comments, Booleans and None
 - [x] Chapter 13 : Conditionals and Whitespace
 - [x] Chapter 14 : Containers : Lists, Tuples, and Sets
-- [ ] Chapter 15 : Iteration
-- [ ] Chapter 16 : Dictionaries
-- [ ] Chapter 17 : Functions
-- [ ]
-- [ ]
+- [x] Chapter 15 : Iteration
+- [x] Chapter 16 : Dictionaries
+- [ ] Chapter 17 : Functions (learn regular expression for last exercice, rewrite binary_search.py)
+- [x] Chapter 18 : Indexing and Slicing
+- [ ] Chapter 19 : File Input and Output
 - [ ]
 - [ ]
 - [ ]

@@ -1,6 +1,5 @@
-def is_prime(n) :
+def is_prime(n, prime=True) :
     i=2
-    prime = True
     while i < n :
         result = n % i
         i += 1
@@ -10,4 +9,4 @@ def is_prime(n) :
         
     print (prime)
 
-is_prime(8)
+is_prime(7)
