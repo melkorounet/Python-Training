@@ -10,7 +10,6 @@ def print_colors():
     while True:
         color = input("Entrez le nom d'une couleur (ou quit pour quitter)")
         color = color.lower()
-        print(color)
         if color == "quit" :
             print("bye")
             break

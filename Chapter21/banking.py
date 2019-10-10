@@ -16,8 +16,3 @@ class CustomerBank:
     def retrait (self, number):
         self.count=-number
 
-customer=CustomerBank(1)
-customer.depot(10)
-print(customer.count)
-customer.depot(20)
-print(customer.count)

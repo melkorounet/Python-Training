@@ -35,7 +35,6 @@ def slice_and_dice(text: str = text) -> list:
         else: 
             continue
     #results.strip('.')
-    print(results)
-    
+    return(results)    
 
 slice_and_dice(text)

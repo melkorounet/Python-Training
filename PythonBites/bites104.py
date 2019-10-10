@@ -10,7 +10,6 @@ def split_in_columns(message=message):
     message = message.split("\n")
     print(message)
     message = "|".join(message)
-    print(message)
-    pass
-
+    return message
+    
 split_in_columns(message)
