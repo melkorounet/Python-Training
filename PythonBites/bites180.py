@@ -14,7 +14,6 @@ Halbard,Davie,CN"""
 
 def group_names_by_country(data: str = data) -> defaultdict:
     countries = defaultdict(list)
-    print(type(countries))
     data_list = []
     formatted_data = data.split('\n')
     for entry in formatted_data :

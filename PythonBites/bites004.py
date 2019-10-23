@@ -18,7 +18,6 @@ def get_pybites_top_tags(n=10):
 
     tag_list=[]
     final_list=[]
-    tag_occur = Counter()
     lines=content.split("<category>")
     for texte in lines : 
         if "</category>" in texte : 

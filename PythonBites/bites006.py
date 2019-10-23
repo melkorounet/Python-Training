@@ -3,6 +3,7 @@
 from collections import Counter, namedtuple
 import os
 import urllib.request
+import re
 
 # prep
 
@@ -15,8 +16,6 @@ users, popular_challenges = Counter(), Counter()
 
 Stats = namedtuple('Stats', 'user challenge')
 
-with open(tempfile) as f:
-    content = f.read().lower()
 
 # code
 
@@ -34,15 +33,11 @@ def gen_files():
 
        -> use last column to filter out directories (= True)
     """
-    dir_names=[]
-    liste=content.split("\n")
-    for line in liste : 
-        if "true" in line:
-            dir_names.append(line)
-    print(dir_names)
-    pass
-
-
+    with open(tempfile) as f:
+        return (line.split(',')[0].lower()
+                for line in f.readlines()
+                if line.strip().endswith('True'))
+        
 
 def diehard_pybites():
     """Return a Stats namedtuple (defined above) that contains the user that
@@ -51,6 +46,17 @@ def diehard_pybites():
        Calling this function on the dataset (held tempfile) should return:
        Stats(user='clamytoe', challenge=('01', 7))
     """
-    pass
+    for dir_ in gen_files():
+        ch, user = dir_.split('/')
 
-gen_files()
+        if user in IGNORE:
+            continue
+
+        users[user] += 1
+        popular_challenges[ch] += 1
+
+    user = users.most_common(1)[0][0]
+    challenge = popular_challenges.most_common(1)[0]
+    return Stats(user=user, challenge=challenge)
+
+diehard_pybites()

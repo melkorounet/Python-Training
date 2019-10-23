@@ -28,13 +28,8 @@ def get_workout_motd(day):
        Trivia: /etc/motd is a file on Unix-like systems that contains
        a 'message of the day'"""
     valid_day = []
-#    valid_day_upper=[]
-#    valid_day_lower=[]
     for days in workout_schedule: 
         valid_day.append(days)
-#        valid_day_upper.append(days.upper())
-#        valid_day_lower.append(days.lower())
-
     if day.lower().capitalize() not in valid_day :
         raise KeyError(day, 'is not a valid day')
 

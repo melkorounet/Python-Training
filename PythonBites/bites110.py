@@ -13,4 +13,3 @@ def divide_numbers(numerator, denominator):
         return 0
     return result
 
-divide_numbers(1,0)
